@@ -1,0 +1,83 @@
+@offwhite: #f9f9f9;
+@lightgrey: #ccc;
+@lightblue: #def5ff;
+@mediumblue: #428bca;
+@darkblue: #133b76;
+@desktopWidth: 960px;
+@mobilePortraitWidth: 480px;
+@mobilePortraitWidthPlus1: 481px;
+@desktopWidthTransition: 959px;
+@desktopWidthTransition2: 1135px;
+@centeredNavBreak: 1306px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	background-color: #edf1f8;
+}
+
+a, a:link, a:visited {
+	color: #05ad9c;
+	text-decoration: none;
+}
+
+a:focus, a:hover, a:active {
+	color: #007f72;
+	text-decoration: underline;
+}
+
+.logo {
+	display: table-cell;
+	padding-left: 15px;
+	vertical-align: middle;
+	a {
+		height: 100%;
+		width: 100%;
+		display: inline-block;
+		img {
+			max-width: 171px;
+			max-height: 45px;
+			image-rendering: -moz-crisp-edges;
+      // Uncomment one of the lines below to change the SVG logo color
+			// https://codepen.io/sosuke/pen/Pjoqqp - hex converter
+			// filter: invert(30%) sepia(96%) saturate(1275%) hue-rotate(105deg) brightness(94%) contrast(102%); // matrix-green
+			// filter: invert(100%) sepia(5%) saturate(534%) hue-rotate(236deg) brightness(114%) contrast(100%); // white
+			// filter: invert(9%) sepia(55%) saturate(3844%) hue-rotate(234deg) brightness(84%) contrast(126%); // blue
+		}
+	}
+}
+
+.header {
+	// box-shadow: 0 0 5px 0 #aaa;
+	background-color: #fefefe;
+	border-bottom: 1px solid #ccc;
+
+	> .col {
+		height: 75px;
+		display: table;
+		width: 100%;
+	}
+}
+
+.main {
+	padding: 10px;
+	padding-top: 20px;
+	float: left;
+}
+
+h1 {
+	&.pagetitle {
+		text-transform: capitalize;
+		margin-top: 0px;
+		color: @darkblue;
+	}
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+label {
+	margin-bottom: 0px !important;
+}
